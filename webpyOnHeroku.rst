@@ -9,12 +9,12 @@ Sign up Heroku
 
 Learn some commands
 =====
-    heroku login
+    * heroku login
 
-    heroku config
+    * heroku config
         This command to show some environment variables, most important is DATABASE_URL 
 
-    git push heroku master
+    * git push heroku master
 
 Import database
 =====
@@ -31,14 +31,15 @@ This issue is fixed on development version on Github:
 https://github.com/webpy/webpy/issues/171
 
 You can use below function::
-def dburl2dict(url):
-    dbn, rest = url.split('://', 1)
-    user, rest = rest.split(':', 1)
-    pw, rest = rest.split('@', 1)
-    host, rest = rest.split(':', 1)
-    port, rest = rest.split('/', 1)
-    db = rest
-    return dict(dbn=dbn, user=user, pw=pw, db=db, host=host)
+
+    def dburl2dict(url):
+        dbn, rest = url.split('://', 1)
+        user, rest = rest.split(':', 1)
+        pw, rest = rest.split('@', 1)
+        host, rest = rest.split(':', 1)
+        port, rest = rest.split('/', 1)
+        db = rest
+        return dict(dbn=dbn, user=user, pw=pw, db=db, host=host)
 
 to get a dict and pass it to web.database()::
 
