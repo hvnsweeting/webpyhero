@@ -31,26 +31,21 @@ This issue is fixed on development version on Github:
 https://github.com/webpy/webpy/issues/171
 
 You can use below function:
-``
-    def dburl2dict(url):
-        dbn, rest = url.split('://', 1)
-        user, rest = rest.split(':', 1)
-        pw, rest = rest.split('@', 1)
-        host, rest = rest.split(':', 1)
-        port, rest = rest.split('/', 1)
-        db = rest
-        return dict(dbn=dbn, user=user, pw=pw, db=db, host=host)
-``
+|    def dburl2dict(url):
+|        dbn, rest = url.split('://', 1)
+|        user, rest = rest.split(':', 1)
+|        pw, rest = rest.split('@', 1)
+|        host, rest = rest.split(':', 1)
+|        port, rest = rest.split('/', 1)
+|        db = rest
+|        return dict(dbn=dbn, user=user, pw=pw, db=db, host=host)
 
 to get a dict and pass it to web.database():
 
-``
-    d = dburl2dict(YOUR_DATABASE_URL)
-    db = web.database(dbn=d['dbn'], 
-                        db=d['db'],
-                        user=d['user'],
-                        pw=d['pw'],
-                        host=d['host'],
-                        )
-``
-    
+|    d = dburl2dict(YOUR_DATABASE_URL)
+|    db = web.database(dbn=d['dbn'], 
+|                        db=d['db'],
+|                        user=d['user'],
+|                        pw=d['pw'],
+|                        host=d['host'],
+|                        )
