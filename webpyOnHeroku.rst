@@ -54,3 +54,8 @@ to get a dict and pass it to web.database()::
                         host=d['host'],
                         )
     
+YOUR_DATABASE_URL has format: 
+
+`postgres://<USER>:<PASS>@<HOST>:<PORT>/<DBNAME>`
+
+which you can see from `heroku config` output
