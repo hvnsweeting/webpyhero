@@ -6,6 +6,7 @@ You must use postgresql as your database. Anything else is not supported.
 
 Sign up Heroku
 =====
+This easy
 
 Learn some commands
 =====
@@ -20,6 +21,7 @@ Import database
 =====
 https://devcenter.heroku.com/articles/import-data-heroku-postgres
     `$ pg_dump -Fc --no-acl --no-owner my_old_postgres > data.dump`
+
     `$ PGPASSWORD=<PASS> pg_restore --verbose --clean --no-acl --no-owner -h <HOST> -U <USER> -d <DBNAME> -p <PORT> ~/data.dump`
 
 Use heroku-postgres
