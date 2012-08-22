@@ -22,11 +22,12 @@ Import database
 https://devcenter.heroku.com/articles/import-data-heroku-postgres
     ``$ pg_dump -Fc --no-acl --no-owner my_old_postgres > data.dump``
 
-    ``$ PGPASSWORD=<PASS> pg_restore --verbose --clean --no-acl --no-owner -h <HOST> -U <USER> -d <DBNAME> -p <PORT> ~/data.dump``
+    ``$ PGPASSWORD=<PASS> pg_restore --verbose
+    --clean --no-acl --no-owner -h <HOST> -U <USER> -d <DBNAME> -p <PORT> ~/data.dump``
 
 Use heroku-postgres
 =====
-If you are using `web.py-0.37` or lower, web.py will not direct support use database URL.
+If you are using *web.py-0.37* or lower, web.py will not direct support use database URL.
 
 This issue is fixed on development version on Github:
 
