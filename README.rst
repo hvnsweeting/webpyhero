@@ -17,7 +17,7 @@ Learn some commands
 
     * git push heroku master
 
-Add some Heroku fiel
+Add some Heroku files
 =====
     * requirements.txt
       contains module you need to installs. If you use web.py with postgres,
