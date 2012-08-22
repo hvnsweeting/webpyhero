@@ -1,4 +1,3 @@
-hwisdom
+Deploying web.py on Heroku
 =======
 
-Misc writing
