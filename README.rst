@@ -17,6 +17,16 @@ Learn some commands
 
     * git push heroku master
 
+Add some Heroku fiel
+=====
+    * requirements.txt
+      contains module you need to installs. If you use web.py with postgres,
+      you have to add psycopg2 to this file but no need to import it anywhere
+      (because web.py do it for you)
+    * Procfile
+      provide command you need to run your app
+
+
 Import database
 =====
 https://devcenter.heroku.com/articles/import-data-heroku-postgres
