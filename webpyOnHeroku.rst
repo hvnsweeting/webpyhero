@@ -26,7 +26,7 @@ https://devcenter.heroku.com/articles/import-data-heroku-postgres
 
 Use heroku-postgres
 =====
-If you are using web.py-0.37 or lower, web.py will not direct support use database URL.
+If you are using `web.py-0.37` or lower, web.py will not direct support use database URL.
 
 This issue is fixed on development version on Github:
 
